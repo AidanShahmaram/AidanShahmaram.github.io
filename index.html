@@ -5,15 +5,24 @@
         <meta name = "author" content = "Aidan Shahmaram"/>
         <meta name = "description" content = "This website contains the lost of colleges I (Aidan Shahmaram) applied as well as the decisions I received"/>
         <meta name = "viewport" content = "width=device-width"
-        <link rel = "stylesheet" href = "indexFinal.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
     </head>
     
     <body>
-      <!--First section-->
-      <div style="background-color: #080808; height:1500px; padding-top:80px;"> 
-        <div style="text-align: center; color:rgb(234, 234, 12); border:2px black;">
+    <div> 
+        <div class = "nav-links">
+            <ul>
+                <li><a href = "UC.html"> UC's</a></li>
+                <li><a href = "commonapp.html"> Common App</a></li>
+                <li><a href = "calstate.html"> Cal State</a></li>
+            </ul>
+        </div>
+        
+        <div style="text-align: center; color:rgb(234, 234, 12); border:2px black;" >
             <h1>Aidan's College Decisions</h1>
         </div>
+
         <div style="width: 200px; float:left; height:200px; margin:60px; text-align: center;">
             <a href="acceptFinal.html">
                 <h3>UCLA</h3>
@@ -81,7 +90,7 @@
         </div>
         <div style="width: 200px; float:left; height:200px; margin:60px">
             <a href="acceptFinal.html">
-                <h3><ul>SDSU</ul>/h3>
+                <h3><ul>SDSU</ul></h3>
                 <img src="data:image/png;base64,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"; width = "260"; height = "225";>
             </a>
         </div>
@@ -89,35 +98,82 @@
     </body>
 
     <style>
+            *{
+                font-family: 'Poppins', sans-seriff;
+            }
+
         h1{
-            color: red
+            color: rgb(110, 23, 23)
         }
         a:link {
-            color: rgb(251, 246, 0); 
+            color: rgb(16, 104, 48); 
           background-color: transparent; 
           text-decoration: none;        
         }
 
         a:visited {          
-            color: rgb(251, 246, 0);
+            color: rgb(19, 103, 29);
             background-color: transparent;
             text-decoration: none;    
         }
 
         a:hover {
-          color: rgb(251, 246, 0);
+          color: rgb(15, 87, 34);
           background-color: transparent;
           text-decoration: underline;  
         }
 
         a:active {
-          color: yellow;
+          color: rgb(23, 99, 52);
           background-color: transparent;
           text-decoration: underline; 
         }
 
-        h3{
-
+        nav{
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
         }
+
+        .nav-links{
+            flex: 1;
+            text-align: right;
+        }
+
+        .nav-links ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            position: relative;
+        }
+
+        .nav-links ul li a{
+            color: coral;
+            text-decoration: none;
+            font-size: 13 px;
+        }
+
+        .nav-links ul li::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: coral;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .nav-links ul li:hover::after{
+            width: 100%
+        }
+
+        html { 
+      background: rgb(255, 255, 255) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
     </style>
 </html>
